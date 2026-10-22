@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "proposal_only": true,
+  "data_dir": "/var/lib/radar",
+  "source_config": "/opt/radar/current/config/sources.local.json",
+  "model_config": "/opt/radar/current/config/model.local.json",
+  "ledger_dir": "/var/lib/radar",
+  "python_executable": "/opt/radar/current/.venv/bin/python",
+  "shadow": true,
+  "enable_model": false,
+  "scheduled": false,
+  "interval_seconds": 1800,
+  "missed_grace_seconds": 600,
+  "tick_timeout_seconds": 600,
+  "stage_timeout_seconds": 270,
+  "max_requests": 200,
+  "collect_seconds": 240,
+  "analysis_limit": 4
+}

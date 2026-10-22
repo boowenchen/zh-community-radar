@@ -1,0 +1,30 @@
+name: New source request
+description: Suggest a community or site Radar should support
+labels: [source]
+body:
+  - type: input
+    id: site
+    attributes:
+      label: Site
+      placeholder: https://example.com
+    validations:
+      required: true
+  - type: textarea
+    id: access
+    attributes:
+      label: Public access method
+      description: Public API, RSS/Atom, or plain HTML? Link the docs or terms if you know them.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it is useful
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Checks
+      options:
+        - label: The content is readable without logging in.
+          required: true
+        - label: I checked the site's robots.txt / terms and they do not forbid this kind of low-rate reading.

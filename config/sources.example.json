@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "host_role": "local",
+  "sources": [
+    {"id":"hn","adapter":"hn","family":"hn","enabled":true,"data_cost":0,"interval_minutes":30,"new_limit":30,"top_limit":15,"comment_threads":3,"comments_per_thread":8,"allowed_hosts":["hacker-news.firebaseio.com"]},
+    {"id":"github-ollama","adapter":"feed","family":"github","enabled":true,"data_cost":0,"interval_minutes":30,"content_kind":"release","url":"https://github.com/ollama/ollama/releases.atom"},
+    {"id":"github-llamacpp","adapter":"feed","family":"github","enabled":true,"data_cost":0,"interval_minutes":30,"content_kind":"release","url":"https://github.com/ggml-org/llama.cpp/releases.atom"},
+    {"id":"github-vllm","adapter":"feed","family":"github","enabled":true,"data_cost":0,"interval_minutes":60,"content_kind":"release","url":"https://github.com/vllm-project/vllm/releases.atom"},
+    {"id":"github-transformers","adapter":"feed","family":"github","enabled":true,"data_cost":0,"interval_minutes":60,"content_kind":"release","url":"https://github.com/huggingface/transformers/releases.atom"},
+    {"id":"github-sglang","adapter":"feed","family":"github","enabled":true,"data_cost":0,"interval_minutes":60,"content_kind":"release","url":"https://github.com/sgl-project/sglang/releases.atom"},
+    {"id":"github-openwebui","adapter":"feed","family":"github","enabled":true,"data_cost":0,"interval_minutes":60,"content_kind":"release","url":"https://github.com/open-webui/open-webui/releases.atom"},
+    {"id":"github-ollama-tags","adapter":"feed","family":"github","enabled":true,"data_cost":0,"interval_minutes":60,"content_kind":"tag","url":"https://github.com/ollama/ollama/tags.atom"},
+    {"id":"github-llamacpp-tags","adapter":"feed","family":"github","enabled":true,"data_cost":0,"interval_minutes":60,"content_kind":"tag","url":"https://github.com/ggml-org/llama.cpp/tags.atom"},
+    {"id":"rss-simon","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":60,"url":"https://simonwillison.net/atom/everything/"},
+    {"id":"rss-julia","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":180,"url":"https://jvns.ca/atom.xml"},
+    {"id":"rss-fowler","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":180,"url":"https://martinfowler.com/feed.atom"},
+    {"id":"rss-chip","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":180,"url":"https://huyenchip.com/feed.xml"},
+    {"id":"rss-raschka","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":180,"url":"https://magazine.sebastianraschka.com/feed"},
+    {"id":"rss-mollick","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":180,"url":"https://www.oneusefulthing.org/feed"},
+    {"id":"rss-latent","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":60,"url":"https://www.latent.space/feed"},
+    {"id":"rss-interconnects","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":180,"url":"https://www.interconnects.ai/feed"},
+    {"id":"rss-danluu","adapter":"feed","family":"author-rss","enabled":false,"disabled_reason":"full feed exceeds the default 4 MB response limit","data_cost":0,"interval_minutes":180,"url":"https://danluu.com/atom.xml"},
+    {"id":"rss-construction","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":180,"url":"https://www.construction-physics.com/feed"},
+    {"id":"rss-notboring","adapter":"feed","family":"author-rss","enabled":true,"data_cost":0,"interval_minutes":180,"url":"https://www.notboring.co/feed"},
+    {"id":"ptt-softjob","adapter":"ptt","family":"ptt","enabled":false,"data_cost":0,"interval_minutes":60,"url":"https://www.ptt.cc/bbs/Soft_Job/index.html","pages":2,"articles":8,"refresh_articles":3},
+    {"id":"ptt-stock","adapter":"ptt","family":"ptt","enabled":false,"data_cost":0,"interval_minutes":60,"url":"https://www.ptt.cc/bbs/Stock/index.html","pages":2,"articles":8,"refresh_articles":3},
+    {"id":"lobsters","adapter":"lobsters","family":"lobsters","enabled":true,"tier":"experimental","auth_mode":"none","data_cost":0,"interval_minutes":60,"stories":25,"comment_threads":3,"comments_per_thread":20,"allowed_hosts":["lobste.rs"]},
+    {"id":"hf-qwen3","adapter":"hf","family":"huggingface","enabled":true,"tier":"experimental","auth_mode":"none","data_cost":0,"interval_minutes":120,"repo":"Qwen/Qwen3-8B","discussion_window":10,"threads":3,"comments_per_thread":20,"include_prs":false,"allowed_hosts":["huggingface.co"]},
+    {"id":"v2ex","adapter":"v2ex","family":"v2ex","enabled":true,"tier":"experimental","auth_mode":"none_public_v1","data_cost":0,"interval_minutes":60,"stories":40,"comment_threads":3,"comments_per_thread":20,"max_cache_age_seconds":1800,"allowed_hosts":["www.v2ex.com"]},
+    {"id":"reddit-localllama-rss","adapter":"reddit_rss","family":"reddit","enabled":false,"tier":"experimental","auth_mode":"none_public_rss_not_oauth","data_cost":0,"interval_minutes":120,"subreddit":"LocalLLaMA","posts":25,"comment_threads":0,"comments_per_thread":10,"allowed_hosts":["www.reddit.com"],"disabled_reason":"off by default: Reddit often rate-limits or blocks anonymous RSS; check Reddit terms before enabling","support_end_date":"2026-11-13"}
+  ]
+}

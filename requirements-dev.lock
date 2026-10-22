@@ -1,0 +1,48 @@
+# Generated with: uv pip compile pyproject.toml --extra dev --universal -p 3.11
+anyio==4.15.1
+beautifulsoup4==4.15.0
+boolean-py==5.0
+cachecontrol==0.14.4
+certifi==2026.10.19
+charset-normalizer==3.5.2
+colorama==0.4.6 ; sys_platform == 'win32'
+cyclonedx-python-lib==11.12.0
+defusedxml==0.7.1
+feedparser==6.0.14
+feedparser-sgmllib==2.1.0
+filelock==4.2.4
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.20
+iniconfig==2.3.1
+license-expression==30.4.4
+markdown-it-py==4.2.0
+mdurl==0.1.2
+msgpack==1.2.3
+packageurl-python==0.17.6
+packaging==26.3
+pip==26.2.2
+pip-api==0.0.35
+pip-audit==2.10.1
+pip-requirements-parser==32.0.1
+platformdirs==4.13.5
+pluggy==1.7.0
+portalocker==3.2.0
+psutil==7.2.2
+py-serializable==2.1.0
+pygments==2.21.0
+pyparsing==3.3.3
+pytest==9.1.1
+pywin32==312 ; sys_platform == 'win32'
+requests==2.34.2
+rich==15.0.0
+ruff==0.17.1
+sortedcontainers==2.4.0
+soupsieve==2.10 ; python_full_version < '3.11.5'
+soupsieve==3.0.4 ; python_full_version >= '3.11.5'
+tomli==2.5.0
+tomli-w==1.2.0
+typing-extensions==4.16.0
+tzdata==2026.5
+urllib3==2.8.0

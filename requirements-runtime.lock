@@ -1,0 +1,18 @@
+# Generated with: uv pip compile pyproject.toml --universal -p 3.11
+# Platform markers keep pywin32 Windows-only.
+anyio==4.15.1
+beautifulsoup4==4.15.0
+certifi==2026.10.19
+feedparser==6.0.14
+feedparser-sgmllib==2.1.0
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.20
+portalocker==3.2.0
+psutil==7.2.2
+pywin32==312 ; sys_platform == 'win32'
+soupsieve==2.10 ; python_full_version < '3.11.5'
+soupsieve==3.0.4 ; python_full_version >= '3.11.5'
+typing-extensions==4.16.0
+tzdata==2026.5

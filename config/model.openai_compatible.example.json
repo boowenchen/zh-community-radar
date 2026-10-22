@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "mode": "token_budget",
+  "provider": "openai_compatible",
+  "model": "your-model-name",
+  "timeout_seconds": 150,
+  "max_output_tokens": 2200,
+  "max_input_bytes": 18000,
+  "input_overhead_reservation": 4096,
+  "max_attempts_per_request": 2,
+  "limits": {
+    "run": {
+      "calls": 4,
+      "input_tokens": 70000,
+      "output_tokens": 8800
+    },
+    "day": {
+      "calls": 12,
+      "input_tokens": 100000,
+      "output_tokens": 15000
+    },
+    "month": {
+      "calls": 360,
+      "input_tokens": 3000000,
+      "output_tokens": 450000
+    }
+  },
+  "http": {
+    "endpoint": "http://127.0.0.1:4000/v1/chat/completions",
+    "allowed_endpoints": [
+      "http://127.0.0.1:4000/v1/chat/completions"
+    ],
+    "api_key_env": "RADAR_LLM_API_KEY",
+    "allow_private_http": true,
+    "response_format": "json_schema",
+    "max_tokens_parameter": "max_tokens"
+  },
+  "data_cost_usd": 0,
+  "paid_data_fallback": false
+}

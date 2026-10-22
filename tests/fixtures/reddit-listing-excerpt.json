@@ -1,0 +1,15 @@
+{
+  "kind": "real_deidentified_excerpt",
+  "source": "https://www.reddit.com/r/LocalLLaMA/new/.rss",
+  "observed_at": "2026-10-21T19:25:56Z",
+  "transport_host": "example-collector",
+  "original_body_sha256": "c2398dc700ac9dbe6aef1bd741193d66c954591fba191cfa2fe7ec92a5f9cfb5",
+  "fixture_sha256": "c0757592cbb72fe3a22e808667a6a7abeee84df9ba9ddf71daf85e5bab9c9160",
+  "transformations": [
+    "first 2 entries only",
+    "author element removed",
+    "first body paragraph only",
+    "not a full-text coverage fixture"
+  ],
+  "live_comments_obtained": false
+}
